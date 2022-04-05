@@ -21,6 +21,11 @@ h1 {
   text-align: center;
 }
 
+button {
+  background-color: green;
+  color: white;
+}
+
 .score-card {
   border: 20px solid green;
   margin: 10px 0px;

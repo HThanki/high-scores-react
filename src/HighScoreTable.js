@@ -8,7 +8,7 @@ function HighScoreTable() {
       <div className="heading">
         <h1>High Scores per Country</h1>
         <div className="button">
-          <button>Scores Order</button>
+          <button>Order scores</button>
         </div>
       </div>
       {allCountryScores
