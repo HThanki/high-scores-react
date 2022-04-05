@@ -1,5 +1,5 @@
 import React from "react";
-import allCountryScores from "./allCountryScores";
+//import allCountryScores from "./allCountryScores";
 
 function HighScoreTable() {
   return (
