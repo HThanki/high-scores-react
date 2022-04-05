@@ -6,14 +6,16 @@ function HighScoreTable() {
   return (
     <div>
       <h1>High Scores per Country</h1>
-      {allCountryScores.map((country) => {
-        return (
-          <div className="score-card">
-            <h2>HIGH SCORE: {country.name}</h2>
-            <PlayerScore scores={country.scores} />
-          </div>
-        );
-      })}
+      {allCountryScores
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map((country) => {
+          return (
+            <div className="score-card">
+              <h2>HIGH SCORE: {country.name}</h2>
+              <PlayerScore scores={country.scores} />
+            </div>
+          );
+        })}
     </div>
   );
 }
