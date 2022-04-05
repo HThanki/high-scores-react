@@ -4,6 +4,7 @@
   font-family: "Press Start 2P", cursive;
   padding: 10px 5%;
   margin: 0px;
+  background-color: #bdc3c7;
 }
 
 h1,
@@ -36,4 +37,13 @@ h1 {
 
 .score {
   color: red;
+}
+
+.score,
+.player,
+.player-scores,
+.player-score,
+.score-card,
+.score-card H2 {
+  background-color: white;
 }
