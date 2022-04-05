@@ -16,6 +16,11 @@ h1 {
   margin-bottom: 20px;
 }
 
+.heading {
+  padding: 0;
+  text-align: center;
+}
+
 .score-card {
   border: 20px solid green;
   margin: 10px 0px;

@@ -5,7 +5,12 @@ import PlayerScore from "./PlayerScore";
 function HighScoreTable() {
   return (
     <div>
-      <h1>High Scores per Country</h1>
+      <div className="heading">
+        <h1>High Scores per Country</h1>
+        <div className="button">
+          <button>Scores Order</button>
+        </div>
+      </div>
       {allCountryScores
         .sort((a, b) => a.name.localeCompare(b.name))
         .map((country) => {
