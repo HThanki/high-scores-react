@@ -1,5 +1,4 @@
 import React from "react";
-import HighScoreTable from "./HighScoreTable";
 
 function PlayerScore(props) {
   return (
