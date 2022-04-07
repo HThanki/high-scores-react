@@ -1,18 +1,20 @@
 import React from "react";
 
 function PlayerScore(props) {
+  const orderedScores = [...props.scores].sort((a, b) => {
+    return props.order === "ascending" ? a.s - b.s : b.s - a.s;
+  });
+
   return (
     <div className="player-scores">
-      {props.scores
-        .sort((a, b) => (a.s < b.s ? 1 : -1))
-        .map((score) => {
-          return (
-            <div className="player-score">
-              <div className="player">{score.n}</div>
-              <div className="score">{score.s}</div>
-            </div>
-          );
-        })}
+      {orderedScores.map((score) => {
+        return (
+          <div className="player-score">
+            <div className="player">{score.n}</div>
+            <div className="score">{score.s}</div>
+          </div>
+        );
+      })}
     </div>
   );
 }
